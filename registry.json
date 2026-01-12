@@ -13,13 +13,17 @@
       ]
     },
     {
-      "name": "card",
+      "name": "toast",
       "type": "components:ui",
       "dependencies": ["clsx", "tailwind-merge"],
       "files": [
         {
-          "name": "card.component.ts",
-          "path": "src/app/ui/card/card.component.ts"
+          "name": "toast.service.ts",
+          "path": "src/app/ui/toast/toast.service.ts"
+        },
+        {
+          "name": "toast.component.ts",
+          "path": "src/app/ui/toast/toast.component.ts"
         }
       ]
     }
