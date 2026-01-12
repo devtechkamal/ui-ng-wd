@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "components": [
+    {
+      "name": "button",
+      "type": "components:ui",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "name": "button.component.ts",
+          "path": "src/app/ui/button/button.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "components:ui",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "name": "card.component.ts",
+          "path": "src/app/ui/card/card.component.ts"
+        }
+      ]
+    }
+  ]
+}
