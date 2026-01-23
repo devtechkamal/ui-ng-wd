@@ -1,7 +1,34 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-23T16:12:11.155Z",
+  "generatedAt": "2026-01-23T16:18:42.308Z",
   "components": [
+    {
+      "name": "badge",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "badge.component.css",
+          "path": "src/app/shared/components/ui/badge/badge.component.css"
+        },
+        {
+          "name": "badge.component.html",
+          "path": "src/app/shared/components/ui/badge/badge.component.html"
+        },
+        {
+          "name": "badge.component.spec.ts",
+          "path": "src/app/shared/components/ui/badge/badge.component.spec.ts"
+        },
+        {
+          "name": "badge.component.ts",
+          "path": "src/app/shared/components/ui/badge/badge.component.ts"
+        }
+      ]
+    },
     {
       "name": "button",
       "type": "components:ui",
