@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-13T16:28:54.950Z",
+  "generatedAt": "2026-01-23T16:12:11.155Z",
   "components": [
     {
       "name": "button",
@@ -13,7 +13,7 @@
       "files": [
         {
           "name": "button.component.ts",
-          "path": "src/app/ui/button/button.component.ts"
+          "path": "src/app/shared/components/ui/button/button.component.ts"
         }
       ]
     },
@@ -28,7 +28,7 @@
       "files": [
         {
           "name": "card.component.ts",
-          "path": "src/app/ui/card/card.component.ts"
+          "path": "src/app/shared/components/ui/card/card.component.ts"
         }
       ]
     },
@@ -43,11 +43,11 @@
       "files": [
         {
           "name": "toast.component.ts",
-          "path": "src/app/ui/toast/toast.component.ts"
+          "path": "src/app/shared/components/ui/toast/toast.component.ts"
         },
         {
           "name": "toast.service.ts",
-          "path": "src/app/ui/toast/toast.service.ts"
+          "path": "src/app/shared/components/ui/toast/toast.service.ts"
         }
       ]
     }

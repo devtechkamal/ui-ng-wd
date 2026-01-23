@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // --- CONFIGURATION ---
-const UI_PATH = path.join(__dirname, '../src/app/ui'); // Components kahan hain
+const UI_PATH = path.join(__dirname, '../src/app/shared/components/ui'); // Components kahan hain
 const OUTPUT_FILE = path.join(__dirname, '../registry.json'); // Registry kahan save karni hai
 
 // Dependencies Map (Agar kisi component ko extra library chahiye)
@@ -44,7 +44,7 @@ async function buildRegistry() {
       return {
         name: fileName,
         // Path relative to project root (taaki CLI download kar sake)
-        path: `src/app/ui/${componentName}/${fileName}`,
+        path: `src/app/shared/components/ui/${componentName}/${fileName}`,
       };
     });
 
