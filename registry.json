@@ -1,7 +1,46 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-23T16:18:42.308Z",
+  "generatedAt": "2026-01-26T18:29:35.268Z",
   "components": [
+    {
+      "name": "accordion",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "accordion.component.ts",
+          "path": "src/app/shared/components/ui/accordion/accordion.component.ts"
+        },
+        {
+          "name": "index.ts",
+          "path": "src/app/shared/components/ui/accordion/index.ts"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "avatar-profile.component.ts",
+          "path": "src/app/shared/components/ui/avatar/avatar-profile.component.ts"
+        },
+        {
+          "name": "avatar.component.ts",
+          "path": "src/app/shared/components/ui/avatar/avatar.component.ts"
+        }
+      ]
+    },
     {
       "name": "badge",
       "type": "components:ui",
@@ -12,20 +51,23 @@
       ],
       "files": [
         {
-          "name": "badge.component.css",
-          "path": "src/app/shared/components/ui/badge/badge.component.css"
-        },
-        {
-          "name": "badge.component.html",
-          "path": "src/app/shared/components/ui/badge/badge.component.html"
-        },
-        {
-          "name": "badge.component.spec.ts",
-          "path": "src/app/shared/components/ui/badge/badge.component.spec.ts"
-        },
-        {
           "name": "badge.component.ts",
           "path": "src/app/shared/components/ui/badge/badge.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "breadcrumb.component.ts",
+          "path": "src/app/shared/components/ui/breadcrumb/breadcrumb.component.ts"
         }
       ]
     },
@@ -38,6 +80,10 @@
         "class-variance-authority"
       ],
       "files": [
+        {
+          "name": "button.component.html",
+          "path": "src/app/shared/components/ui/button/button.component.html"
+        },
         {
           "name": "button.component.ts",
           "path": "src/app/shared/components/ui/button/button.component.ts"
@@ -60,6 +106,301 @@
       ]
     },
     {
+      "name": "chart",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "chart.component.ts",
+          "path": "src/app/shared/components/ui/chart/chart.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-table",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "data-table.component.ts",
+          "path": "src/app/shared/components/ui/data-table/data-table.component.ts"
+        },
+        {
+          "name": "table.models.ts",
+          "path": "src/app/shared/components/ui/data-table/table.models.ts"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "confirm-dialog.component.ts",
+          "path": "src/app/shared/components/ui/dialog/confirm-dialog.component.ts"
+        },
+        {
+          "name": "dialog.component.ts",
+          "path": "src/app/shared/components/ui/dialog/dialog.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "drawer.component.ts",
+          "path": "src/app/shared/components/ui/drawer/drawer.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "dropdown-menu.component.ts",
+          "path": "src/app/shared/components/ui/dropdown-menu/dropdown-menu.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "forms",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "checkbox",
+          "path": "src/app/shared/components/ui/forms/checkbox"
+        },
+        {
+          "name": "file-upload",
+          "path": "src/app/shared/components/ui/forms/file-upload"
+        },
+        {
+          "name": "input",
+          "path": "src/app/shared/components/ui/forms/input"
+        },
+        {
+          "name": "native-pickers",
+          "path": "src/app/shared/components/ui/forms/native-pickers"
+        },
+        {
+          "name": "radio",
+          "path": "src/app/shared/components/ui/forms/radio"
+        },
+        {
+          "name": "rich-text-editor",
+          "path": "src/app/shared/components/ui/forms/rich-text-editor"
+        },
+        {
+          "name": "switch",
+          "path": "src/app/shared/components/ui/forms/switch"
+        },
+        {
+          "name": "textarea",
+          "path": "src/app/shared/components/ui/forms/textarea"
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "icon.component.ts",
+          "path": "src/app/shared/components/ui/icon/icon.component.ts"
+        },
+        {
+          "name": "icons.type.ts",
+          "path": "src/app/shared/components/ui/icon/icons.type.ts"
+        }
+      ]
+    },
+    {
+      "name": "multi-select",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "multi-select.component.ts",
+          "path": "src/app/shared/components/ui/multi-select/multi-select.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "navbar",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "navbar.component.ts",
+          "path": "src/app/shared/components/ui/navbar/navbar.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "page-loader",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "page-loader.component.ts",
+          "path": "src/app/shared/components/ui/page-loader/page-loader.component.ts"
+        },
+        {
+          "name": "page-loader.service.ts",
+          "path": "src/app/shared/components/ui/page-loader/page-loader.service.ts"
+        }
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "pagination.component.ts",
+          "path": "src/app/shared/components/ui/pagination/pagination.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "select.component.ts",
+          "path": "src/app/shared/components/ui/select/select.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "sidebar.component.ts",
+          "path": "src/app/shared/components/ui/sidebar/sidebar.component.ts"
+        },
+        {
+          "name": "sidebar.service.ts",
+          "path": "src/app/shared/components/ui/sidebar/sidebar.service.ts"
+        }
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "spinner.component.ts",
+          "path": "src/app/shared/components/ui/spinner/spinner.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "tabs.component.ts",
+          "path": "src/app/shared/components/ui/tabs/tabs.component.ts"
+        }
+      ]
+    },
+    {
+      "name": "theme-toggle",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "theme-toggle.component.ts",
+          "path": "src/app/shared/components/ui/theme-toggle/theme-toggle.component.ts"
+        },
+        {
+          "name": "theme.service.ts",
+          "path": "src/app/shared/components/ui/theme-toggle/theme.service.ts"
+        }
+      ]
+    },
+    {
       "name": "toast",
       "type": "components:ui",
       "dependencies": [
@@ -75,6 +416,10 @@
         {
           "name": "toast.service.ts",
           "path": "src/app/shared/components/ui/toast/toast.service.ts"
+        },
+        {
+          "name": "toaster.component.ts",
+          "path": "src/app/shared/components/ui/toast/toaster.component.ts"
         }
       ]
     }

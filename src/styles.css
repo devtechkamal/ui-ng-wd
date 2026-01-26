@@ -1,3 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
 
-@import "tailwindcss";
+@import './theme.css';
+
+:root {
+  /* Override Primary Color to Orange */
+  --primary: 247, 91%, 59%;
+  --secondary: 215, 16%, 47%;
+  /* --primary-foreground: 0 0% 100%; */
+
+  /* Override Radius to make everything super rounded */
+  /* --radius: 1rem; */
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: 'JetBrains Mono', monospace;
+}

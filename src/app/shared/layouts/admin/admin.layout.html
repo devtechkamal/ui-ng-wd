@@ -1,0 +1,72 @@
+<wdc-sidebar-layout>
+  <wdc-sidebar>
+    <wdc-sidebar-header>
+      <span class="text-xl font-bold text-primary">AdminPanel</span>
+    </wdc-sidebar-header>
+
+    <wdc-sidebar-group-label>Dashboard</wdc-sidebar-group-label>
+
+    <wdc-sidebar-item href="/dashboard" [exact]="true">
+      <!-- <svg icon ... class="w-4 h-4"></svg>  -->
+      Overview
+    </wdc-sidebar-item>
+
+    <wdc-sidebar-collapsible label="Management">
+      <wdc-sidebar-item href="/management/users" class="h-9 text-xs"> All Users </wdc-sidebar-item>
+
+      <wdc-sidebar-item href="/management/roles" class="h-9 text-xs">
+        Roles & Permissions
+      </wdc-sidebar-item>
+
+      <wdc-sidebar-item href="/management/settings" class="h-9 text-xs">
+        Settings
+      </wdc-sidebar-item>
+    </wdc-sidebar-collapsible>
+
+    <wdc-sidebar-item href="/dashboard/analytics">
+      <!-- <svg icon ... class="w-4 h-4"></svg> -->
+      Analytics
+    </wdc-sidebar-item>
+
+    <wdc-sidebar-group-label>Management</wdc-sidebar-group-label>
+
+    <wdc-sidebar-item href="/dashboard/users">
+      <!-- <svg icon ... class="w-4 h-4"></svg> -->
+      Users
+    </wdc-sidebar-item>
+
+    <wdc-sidebar-item href="/dashboard/settings">
+      <!-- <svg icon ... class="w-4 h-4"></svg> -->
+      Settings
+    </wdc-sidebar-item>
+
+    <wdc-sidebar-collapsible label="Reports" [startOpen]="true">
+      <wdc-sidebar-item href="/reports/sales">Sales</wdc-sidebar-item>
+      <wdc-sidebar-item href="/reports/traffic">Traffic</wdc-sidebar-item>
+    </wdc-sidebar-collapsible>
+
+    <wdc-sidebar-footer>
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-slate-200"></div>
+        <div class="text-sm">
+          <p class="font-medium">Kamal</p>
+          <p class="text-xs text-muted-foreground">Admin</p>
+        </div>
+      </div>
+    </wdc-sidebar-footer>
+  </wdc-sidebar>
+
+  <div class="flex flex-col h-full">
+    <header class="flex h-14 items-center gap-4 border-b bg-background px-6">
+      <wdc-sidebar-trigger />
+      <h1 class="text-lg font-semibold">Dashboard</h1>
+      <div class="ml-auto">
+        <wdc-button variant="outline" size="sm">Logout</wdc-button>
+      </div>
+    </header>
+
+    <div class="flex-1 p-6 overflow-auto">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</wdc-sidebar-layout>
