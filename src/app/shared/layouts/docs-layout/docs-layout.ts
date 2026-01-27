@@ -2,11 +2,20 @@ import { Component, ChangeDetectionStrategy, signal } from '@angular/core';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { Footer } from '@shared/components/footer/footer';
 import { Navbar } from '@shared/components/navbar/navbar';
+import { ScrollTopDirective } from '@shared/directives/scroll-to-top.directive';
 import { ToasterComponent } from '@wdcoders/ui-ng/toast/toaster.component';
 
 @Component({
   selector: 'app-docs-layout',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, ToasterComponent, Navbar, Footer],
+  imports: [
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
+    ToasterComponent,
+    Navbar,
+    Footer,
+    ScrollTopDirective,
+  ],
   templateUrl: './docs-layout.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

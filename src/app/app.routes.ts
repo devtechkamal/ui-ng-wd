@@ -19,6 +19,23 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./pages/category/category-list.component').then((m) => m.CategoryListComponent),
       },
+      {
+        path: 'gallery',
+        loadComponent: () =>
+          import('./pages/gallery-demo/gallery-demo.component').then((m) => m.GalleryDemoComponent),
+      },
+      {
+        path: 'calendar',
+        loadComponent: () =>
+          import('./pages/calendar-demo/calendar-demo.component').then(
+            (m) => m.CalendarDemoComponent,
+          ),
+      },
+      {
+        path: 'overlay',
+        loadComponent: () =>
+          import('./pages/overlay-demo/overlay-demo.component').then((m) => m.OverlayDemoComponent),
+      },
     ],
   },
   {

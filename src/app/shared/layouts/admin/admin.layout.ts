@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ButtonComponent } from '@wdcoders/ui-ng/button/button.component';
+import { IconComponent } from '@wdcoders/ui-ng/icon/icon.component';
 import { SIDEBAR_COMPONENTS } from '@wdcoders/ui-ng/sidebar/sidebar.component';
 
 @Component({
   selector: 'wdc-admin',
-  imports: [RouterOutlet, SIDEBAR_COMPONENTS, ButtonComponent],
+  imports: [RouterOutlet, SIDEBAR_COMPONENTS, ButtonComponent, IconComponent],
   templateUrl: './admin.layout.html',
   styleUrl: './admin.layout.css',
 })

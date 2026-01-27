@@ -320,3 +320,83 @@
 @utility ring-background {
   --tw-ring-color: hsl(var(--background));
 }
+
+/* The "Modern Slim" (Best for Admin Panels) */
+@layer utilities {
+  /* 1. The "Modern Slim" Class */
+  .scrollbar-slim {
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+
+  /* Chrome, Edge, Safari */
+  .scrollbar-slim::-webkit-scrollbar {
+    width: 6px; /* Width of vertical scrollbar */
+    height: 6px; /* Height of horizontal scrollbar */
+  }
+
+  .scrollbar-slim::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-slim::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 20px;
+  }
+
+  .scrollbar-slim::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.5);
+  }
+}
+
+/* The "Mac OS" Style (Rounded & Soft) */
+@layer utilities {
+  .scrollbar-mac {
+    /* Firefox */
+    scrollbar-width: auto;
+    scrollbar-color: #888 transparent;
+  }
+
+  .scrollbar-mac::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .scrollbar-mac::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-mac::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Creates padding around thumb */
+    background-clip: content-box; /* Ensures background stays inside border */
+  }
+
+  .scrollbar-mac::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* Dark Mode Support for Mac Style */
+  .dark .scrollbar-mac::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .dark .scrollbar-mac::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* The "Hidden" Scrollbar (Scrollable but invisible) */
+@layer utilities {
+  .scrollbar-hidden {
+    /* Firefox */
+    scrollbar-width: none;
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  /* Chrome, Safari, Opera */
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+}
