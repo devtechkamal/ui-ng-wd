@@ -1,7 +1,66 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-01-26T18:29:35.268Z",
-  "components": [
+  "generatedAt": "2026-01-27T05:56:58.883Z",
+  "items": [
+    {
+      "name": "utils",
+      "type": "utils",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "name": "cn.ts",
+          "path": "src/app/shared/utils/cn.ts",
+          "target": "src/app/shared/utils"
+        },
+        {
+          "name": "dedent.ts",
+          "path": "src/app/shared/utils/dedent.ts",
+          "target": "src/app/shared/utils"
+        }
+      ]
+    },
+    {
+      "name": "directives",
+      "type": "directives",
+      "dependencies": [],
+      "files": [
+        {
+          "name": "click-outside.directive.ts",
+          "path": "src/app/shared/directives/click-outside.directive.ts",
+          "target": "src/app/shared/directives"
+        },
+        {
+          "name": "collapsible.directive.ts",
+          "path": "src/app/shared/directives/collapsible.directive.ts",
+          "target": "src/app/shared/directives"
+        },
+        {
+          "name": "copy-clipboard.directive.ts",
+          "path": "src/app/shared/directives/copy-clipboard.directive.ts",
+          "target": "src/app/shared/directives"
+        },
+        {
+          "name": "scroll-to-top.directive.ts",
+          "path": "src/app/shared/directives/scroll-to-top.directive.ts",
+          "target": "src/app/shared/directives"
+        }
+      ]
+    },
+    {
+      "name": "theme",
+      "type": "theme",
+      "dependencies": [],
+      "files": [
+        {
+          "name": "theme.css",
+          "path": "src/theme.css",
+          "target": "src/styles"
+        }
+      ]
+    },
     {
       "name": "accordion",
       "type": "components:ui",
@@ -14,11 +73,13 @@
       "files": [
         {
           "name": "accordion.component.ts",
-          "path": "src/app/shared/components/ui/accordion/accordion.component.ts"
+          "path": "src/app/shared/components/ui/accordion/accordion.component.ts",
+          "target": "src/app/shared/components/ui/accordion"
         },
         {
           "name": "index.ts",
-          "path": "src/app/shared/components/ui/accordion/index.ts"
+          "path": "src/app/shared/components/ui/accordion/index.ts",
+          "target": "src/app/shared/components/ui/accordion"
         }
       ]
     },
@@ -33,11 +94,13 @@
       "files": [
         {
           "name": "avatar-profile.component.ts",
-          "path": "src/app/shared/components/ui/avatar/avatar-profile.component.ts"
+          "path": "src/app/shared/components/ui/avatar/avatar-profile.component.ts",
+          "target": "src/app/shared/components/ui/avatar"
         },
         {
           "name": "avatar.component.ts",
-          "path": "src/app/shared/components/ui/avatar/avatar.component.ts"
+          "path": "src/app/shared/components/ui/avatar/avatar.component.ts",
+          "target": "src/app/shared/components/ui/avatar"
         }
       ]
     },
@@ -52,7 +115,8 @@
       "files": [
         {
           "name": "badge.component.ts",
-          "path": "src/app/shared/components/ui/badge/badge.component.ts"
+          "path": "src/app/shared/components/ui/badge/badge.component.ts",
+          "target": "src/app/shared/components/ui/badge"
         }
       ]
     },
@@ -67,7 +131,8 @@
       "files": [
         {
           "name": "breadcrumb.component.ts",
-          "path": "src/app/shared/components/ui/breadcrumb/breadcrumb.component.ts"
+          "path": "src/app/shared/components/ui/breadcrumb/breadcrumb.component.ts",
+          "target": "src/app/shared/components/ui/breadcrumb"
         }
       ]
     },
@@ -82,11 +147,34 @@
       "files": [
         {
           "name": "button.component.html",
-          "path": "src/app/shared/components/ui/button/button.component.html"
+          "path": "src/app/shared/components/ui/button/button.component.html",
+          "target": "src/app/shared/components/ui/button"
         },
         {
           "name": "button.component.ts",
-          "path": "src/app/shared/components/ui/button/button.component.ts"
+          "path": "src/app/shared/components/ui/button/button.component.ts",
+          "target": "src/app/shared/components/ui/button"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "calendar.component.ts",
+          "path": "src/app/shared/components/ui/calendar/calendar.component.ts",
+          "target": "src/app/shared/components/ui/calendar"
+        },
+        {
+          "name": "calendar.models.ts",
+          "path": "src/app/shared/components/ui/calendar/calendar.models.ts",
+          "target": "src/app/shared/components/ui/calendar"
         }
       ]
     },
@@ -101,7 +189,8 @@
       "files": [
         {
           "name": "card.component.ts",
-          "path": "src/app/shared/components/ui/card/card.component.ts"
+          "path": "src/app/shared/components/ui/card/card.component.ts",
+          "target": "src/app/shared/components/ui/card"
         }
       ]
     },
@@ -116,7 +205,8 @@
       "files": [
         {
           "name": "chart.component.ts",
-          "path": "src/app/shared/components/ui/chart/chart.component.ts"
+          "path": "src/app/shared/components/ui/chart/chart.component.ts",
+          "target": "src/app/shared/components/ui/chart"
         }
       ]
     },
@@ -131,11 +221,13 @@
       "files": [
         {
           "name": "data-table.component.ts",
-          "path": "src/app/shared/components/ui/data-table/data-table.component.ts"
+          "path": "src/app/shared/components/ui/data-table/data-table.component.ts",
+          "target": "src/app/shared/components/ui/data-table"
         },
         {
           "name": "table.models.ts",
-          "path": "src/app/shared/components/ui/data-table/table.models.ts"
+          "path": "src/app/shared/components/ui/data-table/table.models.ts",
+          "target": "src/app/shared/components/ui/data-table"
         }
       ]
     },
@@ -151,11 +243,13 @@
       "files": [
         {
           "name": "confirm-dialog.component.ts",
-          "path": "src/app/shared/components/ui/dialog/confirm-dialog.component.ts"
+          "path": "src/app/shared/components/ui/dialog/confirm-dialog.component.ts",
+          "target": "src/app/shared/components/ui/dialog"
         },
         {
           "name": "dialog.component.ts",
-          "path": "src/app/shared/components/ui/dialog/dialog.component.ts"
+          "path": "src/app/shared/components/ui/dialog/dialog.component.ts",
+          "target": "src/app/shared/components/ui/dialog"
         }
       ]
     },
@@ -170,7 +264,8 @@
       "files": [
         {
           "name": "drawer.component.ts",
-          "path": "src/app/shared/components/ui/drawer/drawer.component.ts"
+          "path": "src/app/shared/components/ui/drawer/drawer.component.ts",
+          "target": "src/app/shared/components/ui/drawer"
         }
       ]
     },
@@ -185,7 +280,8 @@
       "files": [
         {
           "name": "dropdown-menu.component.ts",
-          "path": "src/app/shared/components/ui/dropdown-menu/dropdown-menu.component.ts"
+          "path": "src/app/shared/components/ui/dropdown-menu/dropdown-menu.component.ts",
+          "target": "src/app/shared/components/ui/dropdown-menu"
         }
       ]
     },
@@ -200,35 +296,43 @@
       "files": [
         {
           "name": "checkbox",
-          "path": "src/app/shared/components/ui/forms/checkbox"
+          "path": "src/app/shared/components/ui/forms/checkbox",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "file-upload",
-          "path": "src/app/shared/components/ui/forms/file-upload"
+          "path": "src/app/shared/components/ui/forms/file-upload",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "input",
-          "path": "src/app/shared/components/ui/forms/input"
+          "path": "src/app/shared/components/ui/forms/input",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "native-pickers",
-          "path": "src/app/shared/components/ui/forms/native-pickers"
+          "path": "src/app/shared/components/ui/forms/native-pickers",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "radio",
-          "path": "src/app/shared/components/ui/forms/radio"
+          "path": "src/app/shared/components/ui/forms/radio",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "rich-text-editor",
-          "path": "src/app/shared/components/ui/forms/rich-text-editor"
+          "path": "src/app/shared/components/ui/forms/rich-text-editor",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "switch",
-          "path": "src/app/shared/components/ui/forms/switch"
+          "path": "src/app/shared/components/ui/forms/switch",
+          "target": "src/app/shared/components/ui/forms"
         },
         {
           "name": "textarea",
-          "path": "src/app/shared/components/ui/forms/textarea"
+          "path": "src/app/shared/components/ui/forms/textarea",
+          "target": "src/app/shared/components/ui/forms"
         }
       ]
     },
@@ -243,11 +347,50 @@
       "files": [
         {
           "name": "icon.component.ts",
-          "path": "src/app/shared/components/ui/icon/icon.component.ts"
+          "path": "src/app/shared/components/ui/icon/icon.component.ts",
+          "target": "src/app/shared/components/ui/icon"
         },
         {
           "name": "icons.type.ts",
-          "path": "src/app/shared/components/ui/icon/icons.type.ts"
+          "path": "src/app/shared/components/ui/icon/icons.type.ts",
+          "target": "src/app/shared/components/ui/icon"
+        }
+      ]
+    },
+    {
+      "name": "image-gallery",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "gallery.model.ts",
+          "path": "src/app/shared/components/ui/image-gallery/gallery.model.ts",
+          "target": "src/app/shared/components/ui/image-gallery"
+        },
+        {
+          "name": "image-gallery.component.ts",
+          "path": "src/app/shared/components/ui/image-gallery/image-gallery.component.ts",
+          "target": "src/app/shared/components/ui/image-gallery"
+        }
+      ]
+    },
+    {
+      "name": "image-viewer",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "name": "image-viewer.component.ts",
+          "path": "src/app/shared/components/ui/image-viewer/image-viewer.component.ts",
+          "target": "src/app/shared/components/ui/image-viewer"
         }
       ]
     },
@@ -262,7 +405,8 @@
       "files": [
         {
           "name": "multi-select.component.ts",
-          "path": "src/app/shared/components/ui/multi-select/multi-select.component.ts"
+          "path": "src/app/shared/components/ui/multi-select/multi-select.component.ts",
+          "target": "src/app/shared/components/ui/multi-select"
         }
       ]
     },
@@ -277,7 +421,8 @@
       "files": [
         {
           "name": "navbar.component.ts",
-          "path": "src/app/shared/components/ui/navbar/navbar.component.ts"
+          "path": "src/app/shared/components/ui/navbar/navbar.component.ts",
+          "target": "src/app/shared/components/ui/navbar"
         }
       ]
     },
@@ -292,11 +437,13 @@
       "files": [
         {
           "name": "page-loader.component.ts",
-          "path": "src/app/shared/components/ui/page-loader/page-loader.component.ts"
+          "path": "src/app/shared/components/ui/page-loader/page-loader.component.ts",
+          "target": "src/app/shared/components/ui/page-loader"
         },
         {
           "name": "page-loader.service.ts",
-          "path": "src/app/shared/components/ui/page-loader/page-loader.service.ts"
+          "path": "src/app/shared/components/ui/page-loader/page-loader.service.ts",
+          "target": "src/app/shared/components/ui/page-loader"
         }
       ]
     },
@@ -311,7 +458,25 @@
       "files": [
         {
           "name": "pagination.component.ts",
-          "path": "src/app/shared/components/ui/pagination/pagination.component.ts"
+          "path": "src/app/shared/components/ui/pagination/pagination.component.ts",
+          "target": "src/app/shared/components/ui/pagination"
+        }
+      ]
+    },
+    {
+      "name": "scroll-top",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "scroll-top.component.ts",
+          "path": "src/app/shared/components/ui/scroll-top/scroll-top.component.ts",
+          "target": "src/app/shared/components/ui/scroll-top"
         }
       ]
     },
@@ -327,7 +492,8 @@
       "files": [
         {
           "name": "select.component.ts",
-          "path": "src/app/shared/components/ui/select/select.component.ts"
+          "path": "src/app/shared/components/ui/select/select.component.ts",
+          "target": "src/app/shared/components/ui/select"
         }
       ]
     },
@@ -342,11 +508,13 @@
       "files": [
         {
           "name": "sidebar.component.ts",
-          "path": "src/app/shared/components/ui/sidebar/sidebar.component.ts"
+          "path": "src/app/shared/components/ui/sidebar/sidebar.component.ts",
+          "target": "src/app/shared/components/ui/sidebar"
         },
         {
           "name": "sidebar.service.ts",
-          "path": "src/app/shared/components/ui/sidebar/sidebar.service.ts"
+          "path": "src/app/shared/components/ui/sidebar/sidebar.service.ts",
+          "target": "src/app/shared/components/ui/sidebar"
         }
       ]
     },
@@ -361,7 +529,8 @@
       "files": [
         {
           "name": "spinner.component.ts",
-          "path": "src/app/shared/components/ui/spinner/spinner.component.ts"
+          "path": "src/app/shared/components/ui/spinner/spinner.component.ts",
+          "target": "src/app/shared/components/ui/spinner"
         }
       ]
     },
@@ -377,7 +546,8 @@
       "files": [
         {
           "name": "tabs.component.ts",
-          "path": "src/app/shared/components/ui/tabs/tabs.component.ts"
+          "path": "src/app/shared/components/ui/tabs/tabs.component.ts",
+          "target": "src/app/shared/components/ui/tabs"
         }
       ]
     },
@@ -392,11 +562,13 @@
       "files": [
         {
           "name": "theme-toggle.component.ts",
-          "path": "src/app/shared/components/ui/theme-toggle/theme-toggle.component.ts"
+          "path": "src/app/shared/components/ui/theme-toggle/theme-toggle.component.ts",
+          "target": "src/app/shared/components/ui/theme-toggle"
         },
         {
           "name": "theme.service.ts",
-          "path": "src/app/shared/components/ui/theme-toggle/theme.service.ts"
+          "path": "src/app/shared/components/ui/theme-toggle/theme.service.ts",
+          "target": "src/app/shared/components/ui/theme-toggle"
         }
       ]
     },
@@ -411,15 +583,40 @@
       "files": [
         {
           "name": "toast.component.ts",
-          "path": "src/app/shared/components/ui/toast/toast.component.ts"
+          "path": "src/app/shared/components/ui/toast/toast.component.ts",
+          "target": "src/app/shared/components/ui/toast"
         },
         {
           "name": "toast.service.ts",
-          "path": "src/app/shared/components/ui/toast/toast.service.ts"
+          "path": "src/app/shared/components/ui/toast/toast.service.ts",
+          "target": "src/app/shared/components/ui/toast"
         },
         {
           "name": "toaster.component.ts",
-          "path": "src/app/shared/components/ui/toast/toaster.component.ts"
+          "path": "src/app/shared/components/ui/toast/toaster.component.ts",
+          "target": "src/app/shared/components/ui/toast"
+        }
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "components:ui",
+      "dependencies": [
+        "clsx",
+        "tailwind-merge",
+        "class-variance-authority",
+        "@angular/cdk"
+      ],
+      "files": [
+        {
+          "name": "popover.component.ts",
+          "path": "src/app/shared/components/ui/tooltip/popover.component.ts",
+          "target": "src/app/shared/components/ui/tooltip"
+        },
+        {
+          "name": "tooltip.directive.ts",
+          "path": "src/app/shared/components/ui/tooltip/tooltip.directive.ts",
+          "target": "src/app/shared/components/ui/tooltip"
         }
       ]
     }
