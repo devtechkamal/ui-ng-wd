@@ -14,7 +14,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TemplatePortal } from '@angular/cdk/portal';
-import { OVERLAY_POSITIONS, OverlayPosition } from '../../utils/overlay.utils';
+import { OVERLAY_POSITIONS, OverlayPosition } from '../../../utils/overlay.utils';
 
 // --- 1. POPOVER COMPONENT ---
 @Component({
